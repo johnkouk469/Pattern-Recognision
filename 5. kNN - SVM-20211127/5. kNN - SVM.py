@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-knndata = pd.read_csv("./knndata.txt")
+knndata = pd.read_csv("C:/Users/johnk/Documents/Google Drive/Pattern-Recognision/5. kNN - SVM-20211127/knndata.txt")
 
 X = knndata.loc[:, ["X1", "X2"]]
 y = knndata.Y
@@ -27,7 +27,7 @@ clf = clf.fit(X, y)
 print(clf.predict([[0.7, 0.6]]))
 print(clf.predict_proba([[0.7, 0.6]]))
 
-alldata = pd.read_csv("./alldata.txt")
+alldata = pd.read_csv("C:/Users/johnk/Documents/Google Drive/Pattern-Recognision/5. kNN - SVM-20211127/alldata.txt")
 
 xtrain = alldata.loc[0:600, ["X1", "X2"]]
 ytrain = alldata.loc[0:600, "y"]

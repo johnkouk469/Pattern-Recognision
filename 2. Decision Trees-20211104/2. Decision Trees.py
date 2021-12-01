@@ -3,7 +3,7 @@ from sklearn import tree
 from sklearn.preprocessing import OneHotEncoder
 import matplotlib.pyplot as plt
 
-weather = pd.read_csv("./weather.txt")
+weather = pd.read_csv("C:/Users/johnk/Documents/Google Drive/Pattern-Recognision/2. Decision Trees-20211104/weather.txt")
 
 encoder = OneHotEncoder(handle_unknown="ignore", sparse=False)
 
