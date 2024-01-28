@@ -17,7 +17,7 @@ print(clf.predict([[0, 0]]))
 print(clf.predict([[1, 0]]))
 print(clf.predict([[0.5, 0]]))
 
-alldata = pd.read_csv("./alldata.txt")
+alldata = pd.read_csv(".\alldata.txt")
 xtrain = alldata.loc[0:600, ["X1", "X2"]]
 ytrain = alldata.loc[0:600, "y"]
 xtest = alldata.loc[600:800, ["X1", "X2"]]
